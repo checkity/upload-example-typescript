@@ -16,5 +16,5 @@ jobs:
           npm test
       - uses: checkity/upload@v1
         with:
-          file-pattern: '**/jacoco.xml'
+          file-pattern: '**/lcov.info'
           repo-token: ${{ secrets.GITHUB_TOKEN }}
